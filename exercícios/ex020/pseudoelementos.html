@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iserindo pseudoelementos</title>
+    <style>
+        /*
+        id = '#'
+        class = '.'
+        pseucoclasses = ':'
+        pseudo-elementos= '::'
+        */
+
+
+        a {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif
+
+        }
+        a:visited {
+            color: rgb(187, 184, 6);
+
+        }
+        a::after{
+           content: '[link]';
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Testando pseudoelementos</h1>
+    <p>
+        <ul><li>
+            <a href="https://www.youtube.com/c/G0ularte" target="_blank">
+            Canal do Goularte</a>
+        </li>
+    
+   <li>
+       
+            <a href="https://www.youtube.com/c/G0ularte" target="_blank" rel="external">
+                Canal da Vanilla stúdios </a>
+   </li>
+        </ul>
+</body>
+</html>

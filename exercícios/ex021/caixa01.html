@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            outline-style: dashed;
+            outline-width: 3px; /*a largura padrão é '3px'*/
+            outline-color: rgb(94, 241, 35);
+            /*De forme simplificada fica outline: style width color*/
+            margin-top: 23px;
+            margin-right:24px;
+            margin-bottom: 23px;
+            margin-left: 23px;
+            
+            /*de forma simplificada fica 'margin: top right bottom left'*/}
+        a{
+            border-style: groove;
+            border-width: 4px;
+            border-color: rgba(0, 0, 0, 0.514);
+            /*de forma simplificada fica 'border: style with color'*/
+
+            background-color: rgb(141, 223, 195);
+           padding-top: 2px;
+           padding-right: 2px;
+           padding-bottom: 2px;
+           padding-left: 2px;
+           /*de forma simplificada fica 'padding: top right bottom left'*/
+        color: rgba(66, 44, 3, 0.877);}
+           
+
+
+            
+        
+    </style>      
+</head>
+<body>
+    <h1>Podemos ver que a Tag de título é uma box level</h1>
+    <p>Uma tag de parágrafo apesar de ser uma box level, podemos inserir nela uma <a href="#">inline-level</a></p>
+    
+</body>
+</html>
