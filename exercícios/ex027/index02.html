@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid parte 3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        .container{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .item{
+            display: grid;
+            grid-template-rows: auto 1fr 50px;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 'header header'
+            'nav main'
+            'rodape rodape';
+        }
+        
+        .item div:nth-child(1){
+            grid-area: header;
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .item div:nth-child(2){
+            grid-area: nav;
+            background-color: yellow;
+            overflow-y: scroll;
+            height: 500px;
+
+        }
+
+        .item div:nth-child(3){
+            grid-area: main;
+            background-color: violet;
+            height: 500px;
+            overflow-y: hidden;
+        }
+
+        .item div:nth-child(4){
+            grid-area: rodape;
+            background-color: turquoise;
+            text-align: justify;
+        }
+        @media (max-width: 768px){
+            .item{
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-template-areas: 'header' 'nav' 'main' 'rodape';
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div>
+                <h1>Logo</h1>
+                <p>Menu</p>
+            </div>
+            <div>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+                <p>Item 1</p>
+            </div>
+            <div>
+                <h1>Olá mundo!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus, perferendis sequi nam temporibus vero architecto vel quasi obcaecati aliquam inventore itaque perspiciatis odio ipsum quod quia tempore nisi voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus, perferendis sequi nam temporibus vero architecto vel quasi obcaecati aliquam inventore itaque perspiciatis odio ipsum quod quia tempore nisi voluptatum?</p>
+            </div>
+            <div>Site criado e desenvolvido por Kawã Felipe</div>
+        </div>
+    </div>
+</body>
+</htm
